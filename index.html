@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Toggle</title>
+
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    .styled {
+      color: white;
+      background-color: green;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <p id="para1">This is my first paragraph</p>
+  <p id="para2">This is second paragraph</p>
+
+  <button id="btn1">Btn 1</button>
+  <button id="btn2">Btn 2</button>
+
+  <script>
+    $(document).ready(function () {
+
+     
+      $("#btn1").click(function () {
+        $("#para1").toggle();
+      });
+
+     
+      $("#btn2").click(function () {
+        $("#para2").addClass("styled");
+      });
+
+    });
+  </script>
+
+</body>
+</html>
